@@ -4,7 +4,7 @@
 
 #### This project let's Dr Chili Kings manage their engineers :woman_factory_worker: and their machines
 
-## Technologies Used
+## Technologies Used :woman_technologist:
 
 * Git
 * C#
@@ -15,15 +15,15 @@
 * CSS
 * SQL
 
-## Setup Installation Requirements
+## Setup Installation Requirements :scroll:
 
-:white_medium_square: 1. Clone the DrChiliKings repository
-:white_medium_square: 2. Open in your favorite IDE
-:white_medium_square: 3. CD into Factory
-:white_medium_square: 4. Ensure MySql workbench is installed on your machine. If needed, please visit this site to download and install: [MySQLWorkBench]("https://www.mysql.com/products/workbench/")
+1. :white_medium_square:  Clone the DrChiliKings repository
+2. :white_medium_square:  Open in your favorite IDE
+3. :white_medium_square:  CD into Factory
+4. :white_medium_square:  Ensure MySql workbench is installed on your machine. If needed, please visit this site to download and install: [MySQLWorkBench]("https://www.mysql.com/products/workbench/")
 
-:white_medium_square: 5. Create an appsettings.json
-:white_medium_square: 6. Add the following to your appsettings.json replacing the ```[YourPasswordHere]``` with your password:
+5. :white_medium_square:  Create an appsettings.json
+6. :white_medium_square:  Add the following to your appsettings.json replacing the ```[YourPasswordHere]``` with your password:
 ```
 {
   "ConnectionStrings": {
@@ -31,10 +31,10 @@
   }
 }
 ```
-:white_medium_square: 7. run "dotnet ef database update"
-:white_medium_square: 8. run "dotnet build"
-:white_medium_square: 9. run "dotnet run" to use the program
-:white_medium_square: 10. Enjoy! :partying_face:
+7. :white_medium_square:  run "dotnet ef database update"
+8. :white_medium_square:  run "dotnet build"
+9. :white_medium_square:  run "dotnet run" to use the program
+10. :white_medium_square:  Enjoy! :partying_face:
 
 # Known Bugs
 None
