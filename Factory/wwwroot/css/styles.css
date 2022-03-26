@@ -1,0 +1,52 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color:rgb(130, 143, 10);
+}
+
+h3 .h3 {
+  font-style: italic;
+}
+
+h4 {
+  color:black;
+}
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:rgba(242, 242, 250, 0.993);
+  background:rgb(130, 143, 10);
+  padding:8px;
+}
+
+body {
+  color:rgb(3, 5, 0);
+}
+
+.btn, .btn:hover {
+  color: rgb(130, 143, 10);
+  border-color: rgb(130, 143, 10);
+}
+li#stylist {
+  color:rgba(81, 126, 14, 0.781);
+  font-size: larger;
+}
+
+li {
+  font-size: smaller;
+  color:rgba(3, 5, 0, 0.781);
+}
+
+
+.container {
+  text-align: center;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.4rem;
+  margin-top: 80px;
+  margin-left: 90px;
+  padding: 2px;
+  border: 22px solid rgba(238, 225, 225, 0.125);
+
+}
