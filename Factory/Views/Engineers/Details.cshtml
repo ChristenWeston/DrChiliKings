@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Engineer;
+
+<h2 class="mt-4">Engineer Details</h2>
+<hr />
+<h5>@Html.DisplayNameFor(model => model.Name):</h5> <p>@Html.DisplayFor(model => model.Name)</p>
+
+<h5>Machines:</h5>
+@foreach (var join in Model.JoinEntities)
+  {
+    @join.machine.Name
+    @using (Html.BeginForm("DeleteMachine", "Engineers"))
+      {
+        @Html.Hidden("joinId", @join.EngineerMachineId)
+        <input type="submit" value="Delete" />
+      }
+  }
+<hr />
+@Html.ActionLink("Add a machine", "AddMachine", new { id = Model.EngineerId }, new { @class = "btn btn-dark btn-sm ml-2 mt-3" })
+@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId }, new { @class = "btn btn-dark btn-sm mx-2 mt-3" })
+@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId }, new { @class = "btn btn-dark btn-sm mx-2 mt-3" })
