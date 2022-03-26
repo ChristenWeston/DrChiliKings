@@ -1,0 +1,41 @@
+@{
+  Layout = "_Layout";
+}
+
+@using Factory.Models;
+
+<h1 class="my-4">Engineers</h1>
+
+@* @if (@Model.Count == 0)
+{
+  <h3>No engineers have been added yet!</h3>
+} *@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Machines</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      @foreach (Engineer engineer in @Model)
+      {
+        <tr>
+        <th>@Html.ActionLink($"{engineer.Name}", "Details", new { id = engineer.EngineerId }, new { @class = "text-black"})</th>
+        <th>
+          @foreach(var machine in @engineer.JoinEntities)
+          {
+            @machine.machine.Name
+            <br>
+          }
+        </th>
+        </tr> 
+      }     
+    </tr>
+  </tbody>
+</table>
+</ul>
+
+@Html.ActionLink("Add Engineer", "Create", new {area = ""}, new { @class = "btn btn-dark btn-sm my-3 mr-4" })
+@Html.ActionLink("Home", "Index", "Home", new {area = ""}, new { @class = "btn btn-dark btn-sm my-3 mx-4" })
