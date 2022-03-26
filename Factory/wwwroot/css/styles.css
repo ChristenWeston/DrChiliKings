@@ -20,6 +20,11 @@ div#footer {
   padding:8px;
 }
 
+span#details {
+  color: black;
+  font-size: smaller;
+}
+
 body {
   color:rgb(3, 5, 0);
 }
@@ -48,5 +53,8 @@ li {
   margin-left: 90px;
   padding: 2px;
   border: 22px solid rgba(238, 225, 225, 0.125);
+}
 
+.home {
+  position: center;
 }
